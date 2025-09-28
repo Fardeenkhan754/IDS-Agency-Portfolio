@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 py-4 px-6 md:px-12 bg-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold gradient-text"
+          >Creative<span class="text-dark">Agency</span></a
+        >
+
+        <div class="hamburger md:hidden">
+          <i class="fas fa-bars text-2xl text-gray-800"></i>
+        </div>
+
+        <div class="nav-links flex space-x-8">
+          <a href="#home" class="nav-link active text-gray-800 font-medium"
+            >Home</a
+          >
+          <a href="#profile" class="nav-link text-gray-800 font-medium"
+            >Profile</a
+          >
+          <a href="#company" class="nav-link text-gray-800 font-medium"
+            >Company Info</a
+          >
+          <a href="#contact" class="nav-link text-gray-800 font-medium"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero pt-20">
+      <div class="slider relative">
+        <!-- Slide 1 -->
+        <div
+          class="slide active flex items-center justify-center"
+          style="
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')
+                center/cover;
+          "
+        >
+          <div class="container mx-auto px-6 md:px-12 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 hcontainer">
+              Innovative Digital Solutions
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+              We craft exceptional digital experiences that drive business
+              growth and customer engagement.
+            </p>
+            <button
+              class="bg-white text-[#7babf9] px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div
+          class="slide flex items-center justify-center"
+          style="
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')
+                center/cover;
+          "
+        >
+          <div class="container mx-auto px-6 md:px-12 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+              Creative Branding Experts
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+              We help businesses stand out with unique branding strategies that
+              resonate with audiences.
+            </p>
+            <button
+              class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div
+          class="slide flex items-center justify-center"
+          style="
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')
+                center/cover;
+          "
+        >
+          <div class="container mx-auto px-6 md:px-12 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+              Results-Driven Marketing
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+              Our data-driven marketing strategies deliver measurable results
+              and ROI for your business.
+            </p>
+            <button
+              class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition"
+            >
+              Our Services
+            </button>
+          </div>
+        </div>
+
+        <div class="slider-controls overflow-hidden">
+          <div class="slider-dot active" data-slide="0"></div>
+          <div class="slider-dot" data-slide="1"></div>
+          <div class="slider-dot" data-slide="2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="section bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Our <span class="gradient-text">Profile</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We are a team of passionate creatives, strategists, and
+            technologists dedicated to delivering exceptional results.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Sarah Johnson</h3>
+            <p class="text-primary text-center mb-4">Creative Director</p>
+            <p class="text-gray-600 text-center">
+              With over 10 years of experience in branding and design, Sarah
+              leads our creative vision with passion and precision.
+            </p>
+            <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Michael Chen</h3>
+            <p class="text-primary text-center mb-4">Lead Developer</p>
+            <p class="text-gray-600 text-center">
+              Michael's technical expertise and problem-solving skills ensure
+              our digital solutions are robust and innovative.
+            </p>
+            <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary"
+            >
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-center mb-2">Emma Rodriguez</h3>
+            <p class="text-primary text-center mb-4">Marketing Strategist</p>
+            <p class="text-gray-600 text-center">
+              Emma's data-driven approach to marketing helps our clients achieve
+              measurable growth and engagement.
+            </p>
+            <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-500 hover:text-primary"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section id="company" class="section bg-white">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Our <span class="gradient-text">Company</span>
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Founded in 2015, Creative Agency has grown from a small startup to
+              a leading digital solutions provider with clients across multiple
+              industries.
+            </p>
+            <p class="text-gray-600 mb-8">
+              We believe in the power of creativity combined with technology to
+              solve complex business challenges and create meaningful
+              connections with audiences.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <div
+                  class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-lightbulb text-primary text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-2">Innovation</h3>
+                <p class="text-gray-600 text-sm">
+                  We constantly push boundaries to deliver cutting-edge
+                  solutions.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <div
+                  class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-handshake text-primary text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-2">Integrity</h3>
+                <p class="text-gray-600 text-sm">
+                  We build trust through transparency and ethical practices.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <div
+                  class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-users text-primary text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-2">Collaboration</h3>
+                <p class="text-gray-600 text-sm">
+                  We work closely with clients as partners in success.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <div
+                  class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4"
+                >
+                  <i class="fas fa-trophy text-primary text-xl"></i>
+                </div>
+                <h3 class="font-bold mb-2">Excellence</h3>
+                <p class="text-gray-600 text-sm">
+                  We strive for perfection in everything we deliver.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-gray-100 rounded-xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Our Team"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Get In <span class="gradient-text">Touch</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Have a project in mind or want to learn more about our services?
+            We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                />
+              </div>
+
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="subject"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition w-full md:w-auto"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="md:w-1/2">
+            <div class="bg-white p-8 rounded-xl shadow-md h-full">
+              <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1"
+                  >
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1">Our Location</h4>
+                    <p class="text-gray-600">
+                      123 Creative Street, Digital City, CA 90210
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1"
+                  >
+                    <i class="fas fa-phone-alt text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1">Phone Number</h4>
+                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                    <p class="text-gray-600">+1 (555) 987-6543</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1"
+                  >
+                    <i class="fas fa-envelope text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1">Email Address</h4>
+                    <p class="text-gray-600">info@creativeagency.com</p>
+                    <p class="text-gray-600">support@creativeagency.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1"
+                  >
+                    <i class="fas fa-clock text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-1">Working Hours</h4>
+                    <p class="text-gray-600">
+                      Monday - Friday: 9:00 AM - 6:00 PM
+                    </p>
+                    <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-bold mb-4 gradient-text">
+              Creative<span class="text-white">Agency</span>
+            </h3>
+            <p class="text-gray-400 mb-4">
+              We help businesses grow through innovative digital solutions and
+              creative strategies.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#profile"
+                  class="text-gray-400 hover:text-white transition"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#company"
+                  class="text-gray-400 hover:text-white transition"
+                  >Company Info</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Web Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Branding</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >App Development</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates and insights.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-l-lg w-full text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-primary px-4 py-2 rounded-r-lg hover:bg-opacity-90 transition"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2023 Creative Agency. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          hamburger.innerHTML = navLinks.classList.contains('active') ?
+              '<i class="fas fa-times text-2xl text-gray-800"></i>' :
+              '<i class="fas fa-bars text-2xl text-gray-800"></i>';
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+              if (navLinks.classList.contains('active')) {
+                  navLinks.classList.remove('active');
+                  hamburger.innerHTML = '<i class="fas fa-bars text-2xl text-gray-800"></i>';
+              }
+          });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener('scroll', ())
+    </script>
+  </body>
+</html>
