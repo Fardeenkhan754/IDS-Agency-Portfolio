@@ -575,31 +575,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu toggle
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('.nav-links');
-
-      hamburger.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-          hamburger.innerHTML = navLinks.classList.contains('active') ?
-              '<i class="fas fa-times text-2xl text-gray-800"></i>' :
-              '<i class="fas fa-bars text-2xl text-gray-800"></i>';
-      });
-
-      // Close mobile menu when clicking a link
-      document.querySelectorAll('.nav-link').forEach(link => {
-          link.addEventListener('click', () => {
-              if (navLinks.classList.contains('active')) {
-                  navLinks.classList.remove('active');
-                  hamburger.innerHTML = '<i class="fas fa-bars text-2xl text-gray-800"></i>';
-              }
-          });
-      });
-
-      // Navbar scroll effect
-      window.addEventListener('scroll', ())
-    </script>
   </body>
 </html>
