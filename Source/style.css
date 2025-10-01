@@ -110,9 +110,17 @@
   color: transparent;
 }
 
+.card-con {
+  padding: 3rem 0 3rem 0;
+}
+
 .team-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover .c-img {
+  border-color: var(--primary-color);
 }
 
 .contact-input:focus {
