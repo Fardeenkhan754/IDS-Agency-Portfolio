@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDS Pakistan</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,32 +15,22 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar fixed w-full z-50 py-4 px-6 md:px-12 bg-white">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold gradient-text"
-          >IDS <span class="text-dark">Pakistan</span></a
-        >
+      <div class="container mx-auto flex justify-between items-center navbar">
+        <a href="#" class="navbar-logo gradient-text">IDS Pakistan</a>
 
-        <div class="hamburger md:hidden">
-          <i class="fas fa-bars text-2xl text-gray-800"></i>
-        </div>
+        <button class="navbar-toggle" id="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
-        <div class="nav-links flex space-x-8">
-          <a href="#home" class="nav-link active text-gray-800 font-medium"
-            >Home</a
-          >
-          <a href="#profile" class="nav-link text-gray-800 font-medium"
-            >Profile</a
-          >
-          <a href="#company" class="nav-link text-gray-800 font-medium"
-            >About Us</a
-          >
-          <a href="#course" class="nav-link text-gray-800 font-medium"
-            >Courses</a
-          >
-          <a href="#contact" class="nav-link text-gray-800 font-medium"
-            >Contact Us</a
-          >
-        </div>
+        <ul class="navbar-manu" id="navbar-manu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#profile" class="nav-link">About Us</a></li>
+          <li><a href="#company" class="nav-link">Courses</a></li>
+          <li><a href="#course" class="nav-link">Courses</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -133,10 +124,10 @@
 
     <!-- Profile Section -->
     <section id="profile" class="section bg-gray-50">
-      <div class="container mx-auto px-6 md:px-12">
+      <div class="container mx-auto px-6 md:px-12" data-aos="fade-up">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4 overflow-hidden">
-            OUR <span class="gradient-text">PROFILE</span>
+            OUR <span class="gradient-text">PROFILES</span>
           </h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
             We have highly experienced and professional trainers dedicated to
@@ -147,6 +138,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 card-con">
           <div
             class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+            data-aos="ease-in"
           >
             <div
               class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary c-img"
@@ -248,7 +240,7 @@
 
     <!-- Company Info Section -->
     <section id="company" class="section bg-white">
-      <div class="container mx-auto px-6 md:px-12">
+      <div class="container mx-auto px-6 md:px-12" data-aos="fade">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
             <h2 class="text-3xl md:text-4xl font-bold mb-6 overflow-hidden">
@@ -333,17 +325,89 @@
         </div>
       </div>
     </section>
+    <!-- Courses -->
+    <section id="course" class="section bg-gray-50">
+      <div class="container mx-auto px-6 md:px-12 py-8" data-aos="fade">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 overflow-hidden">
+            OUR <span class="gradient-text">COURSES</span>
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto"></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 h-auto">
+          <!-- 1st Card -->
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div class="w-full h-[30%] mx-auto mb-6">
+              <img
+                src="C:\Users\IntelComuters\Documents\Fardeen Khan\IDS Pak\Images\Profile.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-left mb-2">Course Title</h3>
+            <p class="text-primary text-left mb-4">Trainer</p>
+            <p class="text-gray-600 text-left">Short Detail about course</p>
+            <ul class="mt-8">
+              <li>Coure Modules</li>
+            </ul>
+          </div>
+          <!-- 2st Card -->
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div class="w-full h-[30%] mx-auto mb-6 overflow-hidden">
+              <img
+                src="C:\Users\IntelComuters\Documents\Fardeen Khan\IDS Pak\Images\Profile.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-left mb-2">Course Title</h3>
+            <p class="text-primary text-left mb-4">Trainer</p>
+            <p class="text-gray-600 text-left">Short Detail about course</p>
+            <ul class="mt-8">
+              <li>Coure Modules</li>
+            </ul>
+          </div>
+          <!-- 3st Card -->
+          <div
+            class="team-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div class="w-full h-[30%] mx-auto mb-6 overflow-hidden">
+              <img
+                src="C:\Users\IntelComuters\Documents\Fardeen Khan\IDS Pak\Images\Profile.jpg"
+                alt="Team Member"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold text-left mb-2">Course Title</h3>
+            <p class="text-primary text-left mb-4">Trainer</p>
+            <p class="text-gray-600 text-left">Short Detail about course</p>
+            <ul class="mt-8">
+              <li>Coure Modules</li>
+            </ul>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="bg-blue-500 py-3 px-5 my-8 text-white font-medium rounded-lg hover:bg-opacity-90"
+          >Veiw More courses</a
+        >
+      </div>
+    </section>
 
     <!-- Contact Us Section -->
     <section id="contact" class="section bg-gray-50">
-      <div class="container mx-auto px-6 md:px-12">
+      <div class="container mx-auto px-6 md:px-12" data-aos="fade">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4 overflow-hidden">
             Get In <span class="gradient-text">Touch</span>
           </h2>
           <p class="text-gray-600 max-w-2xl mx-auto">
-            Have a project in mind or want to learn more about our services?
-            We'd love to hear from you.
+            Want to learn more about our services? We'd love to hear from you.
           </p>
         </div>
 
@@ -355,6 +419,7 @@
                   >Your Name</label
                 >
                 <input
+                  required=""
                   type="text"
                   id="name"
                   class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
@@ -366,6 +431,7 @@
                   >Email Address</label
                 >
                 <input
+                  required=""
                   type="email"
                   id="email"
                   class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
@@ -379,6 +445,7 @@
                   >Subject</label
                 >
                 <input
+                  required=""
                   type="text"
                   id="subject"
                   class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
@@ -392,6 +459,7 @@
                   >Message</label
                 >
                 <textarea
+                  required=""
                   id="message"
                   rows="5"
                   class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
@@ -400,7 +468,7 @@
 
               <button
                 type="submit"
-                class="bg-dark text-black px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition w-full md:w-auto"
+                class="bg-blue-500 text-stone-50 px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition w-full md:w-auto"
               >
                 Send Message
               </button>
@@ -421,7 +489,7 @@
                   <div>
                     <h4 class="font-bold mb-1">Our Location</h4>
                     <p class="text-gray-600">
-                      123 Creative Street, Digital City, CA 90210
+                      Dolphin Towers, Minara Road, Sukkur
                     </p>
                   </div>
                 </div>
@@ -434,8 +502,7 @@
                   </div>
                   <div>
                     <h4 class="font-bold mb-1">Phone Number</h4>
-                    <p class="text-gray-600">+1 (555) 123-4567</p>
-                    <p class="text-gray-600">+1 (555) 987-6543</p>
+                    <p class="text-gray-600">(+92) 310 7778770</p>
                   </div>
                 </div>
 
@@ -448,7 +515,6 @@
                   <div>
                     <h4 class="font-bold mb-1">Email Address</h4>
                     <p class="text-gray-600">info@creativeagency.com</p>
-                    <p class="text-gray-600">support@creativeagency.com</p>
                   </div>
                 </div>
 
@@ -459,11 +525,10 @@
                     <i class="fas fa-clock text-primary"></i>
                   </div>
                   <div>
-                    <h4 class="font-bold mb-1">Working Hours</h4>
+                    <h4 class="font-bold mb-1">Office Timing</h4>
                     <p class="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM
+                      Saturday - Thursday : 11:00 AM - 5:00 PM
                     </p>
-                    <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -475,7 +540,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-12">
-      <div class="container mx-auto px-6 md:px-12">
+      <div class="container mx-auto px-6 md:px-12" data-aos="fade">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-2xl font-bold mb-4 gradient-text">
@@ -596,5 +661,14 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,7 +1,6 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 :root {
   --primary-color: #7babf9;
@@ -129,24 +128,33 @@
 }
 
 .hamburger {
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .nav-links {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: white;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    transition: all 0.5s ease;
-    z-index: 100;
+    align-items: end;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    padding-top: 4rem;
+    align-items: start;
+    font-size: larger;
+    font-weight: 600;
+    gap: 25px;
+    background: white;
+    box-shadow: 2px 2px 50px black;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .nav-links a:first-child {
+    margin-left: 2rem;
   }
 
   .nav-links.active {
@@ -163,5 +171,80 @@
 
   .hero-content {
     text-align: center;
+  }
+}
+
+.navbar-manu {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-manu {
+  gap: 20px;
+  font-weight: 600;
+}
+
+.navbar-toggle {
+  display: none;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 880px) {
+  .navbar {
+    backdrop-filter: none;
+  }
+
+  .navbar-manu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(10px); */
+    background: #ffff;
+    font-size: 1.2rem;
+  }
+  .navbar-manu.fardeen {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 99;
+  }
+
+  .navbar-toggle.fardeen .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-toggle.fardeen .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar-toggle.fardeen .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
